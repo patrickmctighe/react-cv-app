@@ -1,3 +1,201 @@
-.hello{
-    color: red;
+.hello {
+  color: red;
+}
+* {
+  margin: 0;
+}
+input {
+}
+.work {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+  padding-top: 20px;
+  gap: 5px;
+}
+
+.workForm {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 5px;
+
+  gap: 5px;
+}
+.education {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+  padding-top: 20px;
+  gap: 5px;
+}
+
+.eduForm {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 5px;
+  gap: 5px;
+}
+.general {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+  gap: 5px;
+}
+.genForm {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 5px;
+  gap: 5px;
+}
+
+.App {
+  display: flex;
+  gap: 55px;
+}
+.formArea {
+  width: 35%;
+  background-color: whitesmoke;
+  padding: 5px;
+  gap: 5px;
+  border-radius: 45px;
+  border-style: ridge;
+  border-color: lightgray;
+}
+.renderArea {
+  background-color: whitesmoke;
+  width: 40%;
+  gap: 5px;
+  border-radius: 45px;
+  border-style: ridge;
+  border-color: lightgray;
+}
+.cvHead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  background-color: white;
+  width: auto;
+  height: 4em;
+  
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+}
+
+.aboutMe {
+  background-color: whitesmoke;
+  padding: 5px;
+  gap: 5px;
+  padding-left: ;
+}
+.aboutText {
+  background-color: white;
+  height: 5em;
+  padding: 5px;
+  padding-bottom: 5em;
+  gap: 5px;
+  border-radius: 15px;
+}
+.mainDivider {
+  display: flex;
+  padding: 5px;
+  gap: 5px;
+}
+.main {
+  width: 70%;
+  padding: 5px;
+  gap: 5px;
+}
+.sidebar {
+  width: 30%;
+  background-color: white;
+  padding: 10px;
+  gap: 5px;
+  border-radius: 5px;
+}
+.profileImg {
+  height: auto;
+  width: 90%;
+  border-radius: 4px;
+}
+.pInfoSec{
+    border-top: 3px solid whitesmoke;
+}
+.posTit {
+  display: flex;
+  padding: 5px;
+  gap: 5px;
+
+}
+.workEduDates {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  gap: 10px;
+ 
+}
+.eduInfo{
+     background-color: white;
+  border-radius: 10px;
+  display:flex;
+  gap:10px;
+}
+.eduDates{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.workInfo{
+    background-color: white;
+    border-radius: 10px;
+    display:flex;
+    gap:10px;
+}
+.workDates{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.ended{
+    display: flex;
+    flex-direction: column;
+}
+.started{
+    display: flex;
+    flex-direction: column;
+}
+
+#about {
+  height: 70px;
+  padding: 5px;
+  gap: 5px;
+}
+.App {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.formArea {
+  height: 100vh;
+}
+.renderArea {
+  height: 100vh;
+}
+#root {
+  background-color: whitesmoke;
+}
+.infoTitles{
+    padding-left: 25px;
+    border-top: 3px solid white;
+    
 }

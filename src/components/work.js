@@ -1,66 +1,75 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Work extends Component {
   constructor() {
     super();
     this.state = {
-      companyName: '',
-      positionTitle: '',
-      jobTasks: '',
-      dateStarted: '',
-      dateEnded:''
+      companyName: "",
+      positionTitle: "",
+      jobTasks: "",
+      dateStarted: "",
+      dateEnded: "",
     };
   }
 
   handleChange = (event) => {
-    this.setState({ [event.target.id]: event.target.value });
+    const { id, value } = event.target;
+    this.setState({ [id]: value }, () => {
+      this.props.onChange(this.state);
+    });
   };
 
   render() {
-    const { companyName, positionTitle, jobTasks, dateStarted, dateEnded } = this.state;
+    const { companyName, positionTitle, jobTasks, dateStarted, dateEnded } =
+      this.state;
 
     return (
-      <div className='work'>
-        <form className='workForm'>
-          <label htmlFor='companyName'> Company Name: </label>
+      <div className="work">
+        <h2 className="workTitle">Work Experience</h2>
+        <form className="workForm">
+          <label htmlFor="companyName"> Company Name: </label>
           <input
-            id='companyName'
-            type='text'
+            id="companyName"
+            type="text"
             value={companyName}
             onChange={this.handleChange}
           />
 
-          <label htmlFor='positionTitle'> Position: </label>
+          <label htmlFor="positionTitle"> Position: </label>
           <input
-            id='positionTitle'
-            type='text'
+            id="positionTitle"
+            type="text"
             value={positionTitle}
             onChange={this.handleChange}
           />
 
-          <label htmlFor='jobTasks'> Job Tasks: </label>
+          <label htmlFor="jobTasks"> Job Tasks: </label>
           <input
-            id='jobTasks'
-            type='number'
+            id="jobTasks"
+            type="textarea"
             value={jobTasks}
             onChange={this.handleChange}
           />
-
-<label htmlFor='dateStarted'> Start Date: </label>
+          
+<div className="workDates">
+    <div className="started">
+    <label htmlFor="dateStarted"> Started: </label>
           <input
-            id='dateStarted'
-            type='date'
+            id="dateStarted"
+            type="date"
             value={dateStarted}
             onChange={this.handleChange}
-          />
-
-<label htmlFor='dateEnded'> End Date: </label>
+          /></div>
+    
+<div className="ended">  <label htmlFor="dateEnded"> Ended: </label>
           <input
-            id='dateEnded'
-            type='date'
+            id="dateEnded"
+            type="date"
             value={dateEnded}
             onChange={this.handleChange}
-          />
+          /></div></div>
+        
+          
         </form>
       </div>
     );
